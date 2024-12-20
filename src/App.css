@@ -1,104 +1,78 @@
-.App{
-  text-align: center;
-  font-family: Arial, Helvetica, sans-serif;
-  color: white;
-  background-color: blue;
+/* Style for the body */
+body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   height: 100vh;
-  width: 40vw;
+  background-color: #800080; /* Purple background */
+  font-family: Arial, sans-serif;
+  color: white;
+}
+
+.App{
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
-  margin: 5px 10px;
-}
-
-body{
-  background-color: deepskyblue;
   justify-content: center;
-  align-items: center;
-  padding: 10px 20px;
-  margin: 0 auto;
-}
-.eightball{
-  width: 300px;
-  height: 300px;
-  background-color: black;
-  border-radius: 50%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
-  position: relative;
-  overflow: hidden;
-}
-
-.response{
-  width: 70%;
-  height: 70%;
-  background-color: springgreen;
-  border-radius: 50%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  color: black;
-  font-size: 1.2rem;
-  font-weight: bold;
   text-align: center;
-  box-shadow: inset 0 4px 8px rgba(0, 0, 0, 0.4);
 }
 
-.button-group{
+/* Main container styling */
+.container {
+  text-align: center;
+}
+
+.eightball {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  background-color: black;
   display: flex;
-  gap: 10px;
   justify-content: center;
-  margin-top: 20px;
-}
-
-button{
-  margin-top: 20px;
-  background-color: mediumseagreen;
-  color: white;
-  padding: 12px 24px;
-  border: navajowhite;
-  border-radius: 8px;
-  cursor: pointer;
-  font-size: 1rem;
+  align-items: center;
+  color: purple;
+  font-size: 18px;
   font-weight: bold;
-  transition: background-color 0.3s ease, transform 0.2s ease;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  margin: 20px auto;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 }
 
-button:hover{
-  background-color: deepskyblue;
-  transform: scale(1.05);
+/* Button styling */
+button {
+  padding: 10px 20px;
+  font-size: 16px;
+  margin: 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: #4CAF50;
+  color: white;
+  cursor: pointer;
 }
 
-button:active{
-  transform: scale(1);
+button:hover {
+  background-color: #4b0082; /* Darker purple */
 }
 
-.reset-button{
-  background-color: dodgerblue;
-  transform: scale(1.05);
+.reset-button {
+  background-color: #f44336;
 }
 
-.reset-button:hover{
-  background-color: deepskyblue;
-  transform: scale(1);
+.reset-button:hover {
+  background-color: #da190b;
 }
 
-@media (max-width: 768px) {
+/* Media Queries for Mobile Devices */
+@media (max-width: 600px) {
   .eightball {
-      width: 200px;
-      height: 200px;
-  }
-
-  .response {
-      font-size: 1rem;
+    width: 100px;
+    height: 100px;
+    font-size: 14px;
   }
 
   button {
-      padding: 10px 20px;
-      font-size: 0.9rem;
+    width: 80%;
+    font-size: 14px;
   }
 }

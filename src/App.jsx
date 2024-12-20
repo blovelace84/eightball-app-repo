@@ -43,6 +43,8 @@ const App = () => {
         <div className='response'>{answer || "Ask a question"}</div>
       </div>
       <button onClick={getAnswer}>Shake the 8-Ball</button>
+      <br />
+      <br />
       <button className="reset-button" onClick={resetAnswer}>Reset</button>
     </div>
   );
